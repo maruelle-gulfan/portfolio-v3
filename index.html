@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js" integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smooch&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="icon" href="img/Chino-04.png" sizes="32x32" />
+    <title>Maruelle | Portfolio</title>
+
+
+
+
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v15.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+  </head>
+  <body>
+    <div class="loading-screen" id="loading-screen">
+      <div class="spinner-container" style="padding-bottom: 20px;">
+        <img src="./img/profile-me.jpg"/>
+        <div class="spinner"></div>
+      </div>
+      <p>Loading My Portfolio, Please wait...</p>
+    </div>
+    <header>
+      <div class="user">
+        <a href="index.html">
+          <img class="logo" src="img/Chino-55.svg" alt="" />
+          <h3 class="name josefins">.me( )</h3>
+        </a>
+      </div>
+
+      <div id="close" class="hide">×</div>
+      <div id="hamburger-menu">
+        <div class="ham"></div>
+        <div class="ham"></div>
+        <div class="ham"></div>
+      </div>
+      <div id="side-nav"> 
+        <div class="user">
+          <a href="index.html">
+            <img class="logo" src="img/Chino-55.svg" alt="" />
+            <h3 class="name josefins">.me( )</h3>
+          </a>
+        </div>
+        <ul>
+          <a href="#home">
+            <li>.me( )</li>
+          </a>
+          <a href="#about">
+            <li>.about( )</li>
+          </a>
+          <a href="#skills">
+            <li>.skill( )</li>
+          </a>
+          <a href="#portfolio">
+            <li>.project( )</li>
+          </a>
+          <a href="#contact">
+            <li>.contact( )</li>
+          </a>
+       </ul>
+      </div>
+
+      <nav class="navbar">
+        <ul>
+          <li><a class="nav-home" href="#home">.me( )</a></li>
+          <li><a class="nav-about" href="#about">.about( )</a></li>
+          <li><a class="nav-skill" href="#skills">.skill( )</a></li>
+          <li><a class="nav-project" href="#portfolio">.project( )</a></li>
+          <li><a class="nav-contact" href="#contact">.contact( )</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Your SDK code -->
+    
+
+    <section class="hero" id="home">
+      <div class="text">
+        <h1>Maruelle<span class="blue">.Gulfan( )</span></h1>
+        <p class="typewriter">
+          &lt;<span data-text="Web, UI, WordPress"></span>
+          Developer /&gt;
+        </p>
+        <p class="quote">
+          /* If you're not prepared to be wrong, you'll never come up with
+          anything original. */
+        </p>
+        <p class="resume">
+          <span class="blue">`${</span>
+          <a href="pdf/Maruelle-CV.pdf" target="_blank">
+            Resumé <i class="fas fa-folder-open"></i
+          ></a>
+          <span class="blue">}`</span>
+        </p>
+      </div>
+      <div class="img"></div>
+
+      <div id="mouse-scroll">
+        <div class="mouse">
+          <div class="mouse-in"></div>
+        </div>
+        <div>
+          <span class="down-arrow-1"></span>
+          <span class="down-arrow-2"></span>
+          <span class="down-arrow-3"></span>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <div class="heading">
+        <p class="josefins">
+          .about(<span class="blue">'Maruelle Gulfan'</span>)
+        </p>
+      </div>
+      <p class="comment inform">/* Personal Information */</p>
+      <div class="container">
+        <div class="info">
+          <p class="comment">//Socials</p>
+          <div class="social-wrapper">
+            <a class="linkedIn" href="https://www.linkedin.com/in/maruelle-gulfan-a04777235/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a class="linkedIn" href="https://github.com/maruelle-gulfan" target="_blank"
+              ><i class="fab fa-github-square"></i
+            ></a>
+            <a class="linkedIn" href="https://www.facebook.com/chingmaching08/" target="_blank"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+            <a class="linkedIn" href="https://www.instagram.com/chingmahh/" target="_blank"
+              ><i class="fab fa-instagram-square"></i
+            ></a>
+          </div>
+          <p class="comment">//Introduction</p>
+          <div class="introduction">
+            <p style="padding-top: 10px; text-align: justify">
+              Hello, I'm <span class="blue nick">Chino</span>. a Web Developer.
+              Currently a UI Developer at <span class="blue company">{</span>
+              <span class="company">dna:micro</span>
+              <span class="blue company">}</span>. I specialize on making
+              responsive website from scratch. I also like to add animations on
+              a website to make it more dynamic.
+            </p>
+
+            <p class="comment">//About Me</p>
+            <p class="myself">
+              const Name = <span class="blue">(</span>
+              <span class="myInfo">Maruelle Gulfan</span>
+              <span class="blue">)</span>
+            </p>
+
+            <p class="myself">
+              const Nickname = <span class="blue">(</span>
+              <span class="myInfo">Chino</span>
+              <span class="blue">)</span>
+            </p>
+
+            <p class="myself">
+              const Occupation = <span class="blue">(</span>
+              <span class="myInfo">Web Developer</span>
+              <span class="blue">)</span>
+            </p>
+
+            <p class="myself">
+              const Birthday = <span class="blue">(</span>
+              <span class="myInfo">February 14, 1995</span>
+              <span class="blue">)</span>
+            </p>
+
+            <p class="myself">
+              const Age = <span class="blue">(</span>
+              <span class="myInfo">27</span>
+              <span class="blue">)</span>
+            </p>
+
+            <p class="myself">
+              const Nationality = <span class="blue">(</span>
+              <span class="myInfo">Filipino</span>
+              <span class="blue">)</span>
+            </p>
+
+            <p class="myself">
+              const Address = <span class="blue">(</span>
+              <span style="font-size: 16px" class="myInfo"
+                >096-A Purok 2, Cadulawan, Minglanilla, Cebu</span
+              >
+              <span class="blue">)</span>
+            </p>
+
+            <p class="myself">
+              const Phone = <span class="blue">(</span>
+              <span class="myInfo">09179524753</span>
+              <span class="blue">)</span>
+            </p>
+
+            <p class="myself">
+              const Email = <span class="blue">(</span>
+              <span class="myInfo">maruelle08@gmail.com</span>
+              <span class="blue">)</span>
+            </p>
+          </div>
+
+          <p class="comment">//Hobbies</p>
+          <div class="hobbies">
+            <p class="basketball">
+              <i class="fas fa-basketball-ball"></i>
+            </p>
+
+            <p class="swimming">
+              <i class="fas fa-swimmer"></i>
+            </p>
+
+            <p class="travel">
+              <i class="fas fa-plane"></i>
+            </p>
+            <p class="code">
+              <i class="fas fa-laptop-code"></i>
+            </p>
+          </div>
+        </div>
+        <div class="picture">
+          <img src="img/qwe.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="heading">
+        <p class="josefins">.skills(<span class="blue">'Ability'</span>)</p>
+      </div>
+      <div class="container">
+        <div class="hex-container">
+          <div class="hex-wrapper">
+            <div class="hexagon hex-html" id="hexagon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <div class="hexagon hex-css" id="hexagon2">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <div class="hexagon hex-react" id="hexagon3">
+              <i class="fab fa-react"></i>
+            </div>
+            <div class="hexagon hex-js" id="hexagon4">
+              <i class="fab fa-js"></i>
+            </div>
+            <div class="hexagon hex-node" id="hexagon5">
+              <i class="fab fa-node-js"></i>
+            </div>
+            <div class="hexagon hex-wp" id="hexagon6">
+              <i class="fab fa-wordpress"></i>
+            </div>
+            <div class="hexagon hex-sass" id="hexagon7">
+              <i class="fab fa-sass"></i>
+            </div>
+          </div>
+        </div>
+        <div class="skill-details">
+          <div class="item-details html">
+            <p class="title">HTML</p>
+            <p class="sub">Hypertext Markup Language</p>
+            <p class="desc">
+              a standardized system for tagging text files to achieve font,
+              color, graphic, and hyperlink effects on World Wide Web pages.
+            </p>
+            <p class="exp">
+              Experience:
+              <span>4 Years</span>
+            </p>
+          </div>
+
+          <div class="item-details css">
+            <p class="title">CSS</p>
+            <p class="sub">Cascading Style Sheets</p>
+            <p class="desc">
+              is a stylesheet language used to describe the presentation of a
+              document written in HTML. CSS describes how elements should be
+              rendered on screen, on paper, in speech, or on other media.
+            </p>
+            <p class="exp">
+              Experience:
+              <span>4 Years</span>
+            </p>
+          </div>
+
+          <div class="item-details react">
+            <p class="title">ReactJS</p>
+            <p class="sub">React Javascript</p>
+            <p class="desc">
+              is a free and open-source front-end JavaScript library for
+              building user interfaces based on UI components.
+            </p>
+            <p class="exp">
+              Experience:
+              <span>5 Months</span>
+            </p>
+          </div>
+
+          <div class="item-details js">
+            <p class="title">JS</p>
+            <p class="sub">Javascript</p>
+            <p class="desc">
+              is a scripting language that enables you to create dynamically
+              updating content, control multimedia, animate images, and pretty
+              much everything else.
+            </p>
+            <p class="exp">
+              Experience:
+              <span>2 Years</span>
+            </p>
+          </div>
+
+          <div class="item-details node">
+            <p class="title">NodeJS</p>
+            <p class="sub">Node Javascript</p>
+            <p class="desc">
+              is an open-source, cross-platform, back-end JavaScript runtime
+              environment that runs on the V8 engine and executes JavaScript
+              code outside a web browser.
+            </p>
+            <p class="exp">
+              Experience:
+              <span>5 Months</span>
+            </p>
+          </div>
+
+          <div class="item-details wp">
+            <p class="title">WordPress</p>
+            <p class="sub">WordPress</p>
+            <p class="desc">
+              is a free, open-source website creation platform. On a more
+              technical level, WordPress is a content management system (CMS)
+              written in PHP that uses a MySQL database. In non-geek speak,
+              WordPress is the easiest and most powerful blogging and website
+              builder in existence today.
+            </p>
+            <p class="exp">
+              Experience:
+              <span>2 Years</span>
+            </p>
+          </div>
+
+          <div class="item-details sass">
+            <p class="title">SASS</p>
+            <p class="sub">Syntactically Awesome Style Sheets</p>
+            <p class="desc">
+              CSS with superpowers. Sass is the most mature, stable, and
+              powerful professional grade CSS extension language in the world.
+            </p>
+            <p class="exp">
+              Experience:
+              <span>3 Years</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project" id="portfolio">
+      <div class="heading">
+        <p class="josefins">.project(<span class="blue">'Works'</span>)</p>
+      </div>
+      <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>01</h2>
+                <h3>Reunirgracias</h3>
+                <p class="desc">Reunirgracias is a japanese website that I made around 2019. This website is all about house property e-commerce.
+                </p>
+                <p class="made">MADE WITH : 
+                  <i class="fa-brands fa-html5"></i>
+                  <i class="fa-brands fa-js"></i>
+                  <i class="fa-brands fa-css3-alt"></i>
+                </p>
+                <a href="https://reunirgracias.iot-mansion.jp/" target="_blank">VISIT SITE</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>02</h2>
+                <h3>Suma-biz</h3>
+                <p class="desc">Suma-biz is a japanese website that I finished around 2020. This website is all about cellular network provider.
+                </p>
+                <p class="made">MADE WITH : 
+                  <i class="fa-brands fa-html5"></i>
+                  <i class="fa-brands fa-js"></i>
+                  <i class="fa-brands fa-css3-alt"></i>
+                </p>
+                <a href="http://www.suma-biz.com/" target="_blank">VISIT SITE</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>03</h2>
+                <h3>NA CORP</h3>
+                <p class="desc">NA 'enue' Corp is a japanese website I finished around 2021. This website is about a construction firm website that provides the best services.
+                </p>
+                <p class="made">MADE WITH : 
+                  <i class="fa-brands fa-html5"></i>
+                  <i class="fa-brands fa-js"></i>
+                  <i class="fa-brands fa-css3-alt"></i>
+                </p>
+                <a href="https://naproject.net/" target="_blank">VISIT SITE</a>
+            </div>
+        </div>
+
+        <div class="card">
+          <div class="content">
+              <h2>04</h2>
+              <h3>MYSTIQUE</h3>
+              <p class="desc">
+                Mystique is a japanese website I finished working on around 2020. It is an online e-commerce website to promote their physical store in japan.
+              </p>
+              <p class="made">MADE WITH : 
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+              </p>
+              <a href="http://mystique-group.co.jp/?gclid=CjwKCAiA17P9BRB2EiwAMvwNyIfFT5ZnqlrahI-Kto8BWLge0MR-Or5KlMyyrAExtu8VBgOK1H6AuxoCgLMQAvD_BwE/"
+              target="_blank">VISIT SITE</a>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="container two">
+      <div class="card">
+          <div class="content">
+              <h2>05</h2>
+              <h3>Morita-Auto</h3>
+              <p class="desc">Morita-Auto is a japanese website that I made around 2019. This website is all about a car workshop firm.
+              </p>
+              <p class="made">MADE WITH : 
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+              </p>
+              <a href="https://www.morita-auto.co.jp/" target="_blank">VISIT SITE</a>
+          </div>
+      </div>
+      <div class="card">
+          <div class="content">
+              <h2>06</h2>
+              <h3>Horita</h3>
+              <p class="desc">Horita is a japanese website I finished around 2020. This website is about a fruits shop which provides fresh fruits.
+              </p>
+              <p class="made">MADE WITH : 
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+              </p>
+              <a href="http://www.suma-biz.com/" target="_blank">VISIT SITE</a>
+          </div>
+      </div>
+      <div class="card">
+          <div class="content">
+              <h2>07</h2>
+              <h3>Horita</h3>
+              <p class="desc">Horita is a japanese website I finished around 2020. This website is about a fruits shop which provides fresh fruits.
+              </p>
+              <p class="made">MADE WITH : 
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+              </p>
+              <a href="https://www.e-horita.co.jp/" target="_blank">VISIT SITE</a>
+          </div>
+      </div>
+
+      <div class="card">
+        <div class="content">
+            <h2>08</h2>
+            <h3>MYSTIQUE</h3>
+            <p class="desc">
+              Mystique is a japanese website I finished working on around 2020. It is an online e-commerce website to promote their physical store in japan.
+            </p>
+            <p class="made">MADE WITH : 
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-js"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+            </p>
+            <a href="http://mystique-group.co.jp/?gclid=CjwKCAiA17P9BRB2EiwAMvwNyIfFT5ZnqlrahI-Kto8BWLge0MR-Or5KlMyyrAExtu8VBgOK1H6AuxoCgLMQAvD_BwE/"
+            target="_blank">VISIT SITE</a>
+        </div>
+    </div>
+  </div>
+    </section>
+
+
+    <section class="contact-me" id="contact">
+      <div class="heading" style="margin-bottom: 0; padding-bottom:0;">
+        <p class="josefins">.contact(<span class="blue">'Business'</span>)</p>
+      </div>
+      <div class="container">
+        <div class="contact">
+          <div class="left">
+            <div class="headings">Contact Me</div>
+            <div class="para">Let's get down to business</div>
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=minglanilla%20cebu&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com"></a><br><style>.mapouter{position:relative;text-align:right;height:400px;width:400px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:400px;border: 5px solid #00b8f5;}</style></div></div>
+          </div>
+          <div class="right">
+            <div class="right_heading">Contact Information</div>
+            <div class="tabs">
+              <div class="tab1 tab">
+                <div class="email"><i class="fa-solid fa-envelope"></i></i>maruelle08@gmail.com</div>
+              </div>
+              <div class="tab2 tab">
+                <div class="phone"><i class="fa-solid fa-mobile-button"></i></i>0917-952-4753</div>
+              </div>
+              <div class="tab2 tab">
+                <div class="phone"><i class="fa-solid fa-phone"></i></i></i>032-383-6568</div>
+              </div>
+              <div class="tab3 tab">
+                <div class="location"><i class="fas fa-home"></i>Minglanilla, Cebu</div>
+              </div>
+            </div>
+            <p class="comment inform">/* Social Medias */</p>
+            <div class="social">
+              <a href="https://www.facebook.com/chingmaching08/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/maruelle-gulfan-a04777235/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/chingmahh/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://github.com/maruelle-gulfan" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+    </section>
+
+
+    <section class="modal hidden">
+      <div class="wrapper">
+        <button class="btn-close">⨉</button>
+        <div class="quote-title">Quote of the Day</div>
+        <div class="content">
+          <div class="quote-area">
+            <i class="fas fa-quote-left"></i>
+            <p class="q-quote">Nothing ever goes away until it has taught us what we need to know.</p>
+            <i class="fas fa-quote-right"></i>
+          </div>
+          <div class="author">
+            <span>__</span>
+            <span class="q-name">Pema Chödrön</span>
+          </div>
+        </div>
+        <div class="buttons">
+          <div class="features">
+            <ul>
+              <li class="speech"><i class="fas fa-volume-up"></i></li>
+              <li class="copy"><i class="fas fa-copy"></i></li>
+              <li class="twitter"><i class="fab fa-twitter"></i></li>
+            </ul>
+            <button id="newQuote">New Quote</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="overlay hidden"></div>
+    <button class=" btn-open">
+    <div class="day-quote">
+      <i class="fa-sharp fa-solid fa-quote-right"></i>
+      
+    </div>
+    </button>
+
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "222171674466874");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    
+
+    <script src="./js/all.js"></script>
+    <script src="./js/animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
+  </body>
+
+  <script>
+    function closeLoadingScreen(loadingScreen) {
+    loadingScreen.style.transitionDuration = ".5s";
+    loadingScreen.style.transitionTimingFunction = "cubic-bezier(0,.75,.25,1)";
+    loadingScreen.style.opacity = 0;
+    loadingScreen.style.borderRadius = "40px";
+    loadingScreen.style.transform = "scale(0.75)";
+    loadingScreen.style.cursor = "initial";
+    setTimeout(() => {
+      loadingScreen.parentNode.removeChild(loadingScreen);
+    }, 500)
+  }
+  
+  document.body.onload = ()=>{
+    lscreen = document.getElementById("loading-screen");
+    
+    // load any data and call the function "closeLoadingScreen(lscreen)"
+  
+    setTimeout(()=>{closeLoadingScreen(lscreen)}, 2000); // FOR DEMO
+  }
+
+
+
+
+  const quoteText = document.querySelector(".q-quote"),
+  quoteBtn = document.getElementById("newQuote"),
+  authorName = document.querySelector(".q-name"),
+  speechBtn = document.querySelector(".speech"),
+  copyBtn = document.querySelector(".copy"),
+  twitterBtn = document.querySelector(".twitter"),
+  synth = speechSynthesis;
+
+async function randomQuote() {
+  quoteBtn.classList.add("loading");
+  quoteBtn.innerText = "Loading...";
+  const response = await fetch("https://api.quotable.io/random");
+  const data = await response.json();
+  if (response.ok) {
+    quoteText.innerText = data.content;
+    authorName.innerText = data.author;
+  } else {
+    alert("An error occured");
+    console.log(data);
+  }
+  quoteBtn.classList.remove("loading");
+  quoteBtn.innerText = "New Quote";
+}
+
+speechBtn.addEventListener("click", () => {
+  let utterance = new SpeechSynthesisUtterance(
+    `${quoteText.innerText} by ${authorName.innerText}`
+  );
+  synth.speak(utterance);
+});
+
+copyBtn.addEventListener("click", () => {
+  navigator.clipboard.writeText(quoteText.innerText);
+});
+
+twitterBtn.addEventListener("click", () => {
+  let tweetUrl = `https://twitter.com/intent/tweet?url=${quoteText.innerText}`;
+  window.open(tweetUrl, "_top");
+});
+
+quoteBtn.addEventListener("click", randomQuote);
+
+
+   
+  </script>
+</html>
